@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management Tool</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+</head>
+<body>
+
+<div id="container">
+    <form id="task-form">
+        <h1>Project Management Tool</h1>
+        <label for="project-name">Project Name:</label>
+        <input type="text" id="project-name" required>
+        <label for="assignee">Assignee:</label>
+        <input type="text" id="assignee" required>
+        <label for="date-assigning">Date of Assigning:</label>
+        <input type="date" id="date-assigning" required>
+        <label for="deadline-date">Deadline Date:</label>
+        <input type="date" id="deadline-date" required>
+        <label for="comment">Comment:</label>
+        <textarea id="comment" rows="4"></textarea>
+        <button type="button" onclick="addProject()">Add Project</button>
+    </form>
+
+    <div id="project-list">
+        <h1>Project List</h1>
+        <ul></ul>
+    </div>
+</div>
+
+</body>
+</html>
